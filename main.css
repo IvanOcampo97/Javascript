@@ -1,0 +1,348 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: auto;
+}
+
+header {
+  background-color: white;
+}
+
+header div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  width: auto;
+  height: auto;
+}
+
+main button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+main button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+main button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+main button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+main button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+main button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main button:hover .circle {
+  width: 100%;
+}
+
+main button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+
+main button:hover .button-text {
+  color: #fff;
+}
+
+main .grid-container {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .grid-container2 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+.flex-padre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+.texto {
+  text-align: center;
+}
+
+.texto2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.titulos {
+  width: 100%;
+  height: auto;
+}
+
+#galeria img:hover {
+  border: 5px solid white;
+}
+
+#galeria .col-lg-6 {
+  padding: 20px;
+  /* From cssbuttons.io by @Cevorob */
+}
+
+#galeria .col-lg-6 button {
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  border: 2px solid #000;
+  background: #e8e8e8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  -webkit-transition: all .05s linear;
+  transition: all .05s linear;
+  font-family: inherit;
+}
+
+#galeria .col-lg-6 button:before,
+#galeria .col-lg-6 button:after {
+  content: "";
+  position: absolute;
+  background: #e8e8e8;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+#galeria .col-lg-6 button:before {
+  width: calc(100% + 6px);
+  height: calc(100% - 16px);
+  top: 8px;
+  left: -3px;
+}
+
+#galeria .col-lg-6 button:after {
+  width: calc(100% - 16px);
+  height: calc(100% + 6px);
+  top: -3px;
+  left: 8px;
+}
+
+#galeria .col-lg-6 button:hover {
+  cursor: crosshair;
+}
+
+#galeria .col-lg-6 button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#galeria .col-lg-6 button:hover:before {
+  height: calc(100% - 32px);
+  top: 16px;
+}
+
+#galeria .col-lg-6 button:hover:after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+#galeria .col-lg-6 button span {
+  font-size: 15px;
+  z-index: 3;
+  position: relative;
+  font-weight: 600;
+}
+
+#galeria img {
+  width: 100%;
+}
+
+.precio {
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.precio2 {
+  text-align: center;
+}
+
+footer {
+  width: auto;
+  height: 100px;
+  background-color: black;
+}
+
+footer .fab {
+  color: white;
+  font-size: 25px;
+}
+
+footer .seguinos {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+footer .sectionfooter {
+  height: 5%;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .redes {
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.video {
+  margin-top: 5%;
+  position: absolute;
+  right: 43%;
+}
+/*# sourceMappingURL=main.css.map */
